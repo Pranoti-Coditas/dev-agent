@@ -1,0 +1,25 @@
+{
+  "name": "jira-dev-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Jira-driven coding agent with human approval gates, deterministic guardrails and local test evidence",
+  "bin": {
+    "jira-agent": "src/cli.js"
+  },
+  "scripts": {
+    "agent": "node src/cli.js",
+    "check": "node src/check.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "0.133.0",
+    "dotenv": "16.4.7",
+    "js-yaml": "4.1.0"
+  },
+  "optionalDependencies": {
+    "playwright": "^1.49.1"
+  }
+}
